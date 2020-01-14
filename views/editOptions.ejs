@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>code base for D box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/materialize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="#eceff1 blue-grey lighten-5">
+    <div class="container"> <br><br><br><br>
+        <div class="row">
+            <form action="/adminLogin" method="get">
+                <button class="waves-effect waves-light btn right" type="submit" name="action"><b class="black-text">LOG</b> <b class="black">OUT</b></button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col col l4 m12 s12 card white">
+                <div class="card-action">
+                    <b>Insert contents into Dbox</b>
+                </div>
+                <form action="/insertIntoDbox" method="post"> 
+                    <div class="input-field col l12 s6 m6">
+                    <input name="environment" type="text" class="validate">
+                    <label for="icon_prefix">Environment</label>
+                    </div>
+                    <div class="input-field col l12 s6 m6">
+                    <input name="codebase" type="tel" class="validate">
+                    <label for="icon_telephone">Codebase</label>
+                    </div>
+                    <div class="input-field col l12 s6 m6">
+                    <input name="latestDrop" type="tel" class="validate">
+                    <label for="icon_telephone">Latest Drop</label>
+                    </div>
+                    <div class="input-field col l12 s6 m6"><br>
+                    <button class="waves-effect waves-light btn left" type="submit" name="action">INSERT</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col col l8 m12 s12 card white">
+                    <div class="card-action">
+                            <b>Insert contents into Codebase</b>
+                        </div>
+                        <form action="/insertIntoCodebase" method="post"> 
+                            <div class="input-field col l6 s6 m6">
+                            <input name="release" type="tel" class="validate">
+                            <label for="icon_telephone">Release</label>
+                            </div>
+                            <div class="input-field col l6 s6 m6">
+                            <input name="environment" type="tel" class="validate">
+                            <label for="icon_telephone">Environment</label>
+                            </div>
+                            <div class="input-field col l6 s6 m6">
+                            <input name="date" type="tel" class="validate">
+                            <label for="icon_telephone">Date</label>
+                            </div>
+                            <div class="input-field col l6 s6 m6">
+                            <input name="jira" type="tel" class="validate">
+                            <label for="icon_telephone">Jira</label>
+                            </div>
+                            <div class="input-field col l6 s6 m6">
+                            <input name="description" type="tel" class="validate">
+                            <label for="icon_telephone">Description</label>
+                            </div>
+                            <div class="input-field col l6 s6 m6">
+                            <input name="priority" type="tel" class="validate">
+                            <label for="icon_telephone">Priority</label>
+                            </div>
+                            <div class="input-field col l6 s6 m6"><br>
+                            <button class="waves-effect waves-light btn left" type="submit" name="action">INSERT</button>
+                            </div>
+                        </form>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col col l6 m12 s12 card white">
+                    <div class="card-action">
+                        <b>Enter ID to delete contents in Dbox</b>
+                    </div>
+                        <form action="/deleteFromDbox" method="post"> 
+                            <div class="input-field col l12 s6 m6">
+                            <input name="id" type="text" class="validate">
+                            <label for="icon_prefix">Enter id</label>
+                            </div>
+                            <div class="input-field col l12 s6 m6"><br>
+                            <button class="waves-effect waves-light btn left" type="submit" name="action">DELETE</button>
+                            </div>
+                        </form>
+                </div>
+                <div class="col col l6 m12 s12 card white">
+                        <div class="card-action">
+                                <b>Enter ID to delete contents in Codebase</b>
+                        </div>
+                        <form action="/deleteFromCodebase" method="post"> 
+                            <div class="input-field col l12 s6 m6">
+                            <input name="id" type="text" class="validate">
+                            <label for="icon_prefix">Enter id</label>
+                            </div>
+                            <div class="input-field col l12 s6 m6"><br>
+                            <button class="waves-effect waves-light btn left" type="submit" name="action">DELETE</button>
+                            </div>
+                        </form>
+                </div>
+        </div>
+    </div>
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/materialize.js"></script>
+    <script src="./js/init.js"></script>
+</body>
+</html>

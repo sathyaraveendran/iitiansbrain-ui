@@ -1,14 +1,29 @@
 {
-  "name": "samplenodejs",
+  "name": "iitiansbrain",
   "version": "1.0.0",
-  "description": "smaple test app",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
+  "keywords": [
+    "best iit coaching acedemy in coimbatore",
+    "iitans brain"
+  ],
+  "author": "sathyar",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
-  }
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "bunyan": "^1.8.12",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "serve-favicon": "^2.5.0",
+    "cookie-parser": "^1.4.3",
+    "get-form-data": "^2.0.0",
+    "express-session": "^1.15.6"
+  },
+  "devDependencies": {
+    "npm": "^6.13.4"
+  },
+  "main": "app.js",
+  "description": ""
 }
