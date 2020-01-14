@@ -10,6 +10,9 @@
   ],
   "author": "sathyar",
   "license": "ISC",
+  "engines": {
+    "node": "10.16.0"
+  },
   "dependencies": {
     "express": "^4.16.3",
     "mysql": "^2.15.0",
