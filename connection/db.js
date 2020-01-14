@@ -10,8 +10,7 @@ multipleStatements: true
 });
 connection.connect(function(err){
 if(err){
-    log.info('connection failed');
-}
+ }
 });     
 
 
